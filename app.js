@@ -88,16 +88,16 @@
 // let valor1 = 10
 // let valor2 = 20
 // let valor3= 30
-// let media = (valor1+valor2+valor3)/3
 
+// let media = (valor1+valor2+valor3)/3
 // if (media>=0) {
 //     console.log(`media: ${media}`);
 // }
 
 // 2. Faça um programa para converter um certo valor em dólar para reais (ver cotação do
 // dia).
-// let dolar = 6.50
-// let real = 50
+// let dolar = 5.21
+// let real = 100
 // let convertido = real*dolar
 
 // if (convertido>=0) {
@@ -139,7 +139,7 @@
 // compra for menor que 20,00; caso contrário, o lucro será de 30%. Ler o valor do produto e
 // imprimir o valor da venda (conforme as taxas do enunciado).
 
-// let valorProduto = 50
+// let valorProduto = 100
 
 // if(valorProduto <= 20) {
 //     console.log(`Valor: ${1.30*valorProduto}`);
@@ -148,11 +148,12 @@
 //     console.log(`valor: ${1.45*valorProduto}`);
 // }
 
+
 // 16. Faça um programa que leia dois números e efetua a adição. Se o valor somado for
 // maior que 20, este deverá ser apresentado somando-se a ele 8; se o valor somado for
 // menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
 
-// let numero1 = 11
+// let numero1 = 20
 // let numero2 = 10
 // let somado = numero1 + numero2
 
@@ -162,3 +163,65 @@
 // } else if (somado <= 20) {
 //     console.log(`soma: ${somado-5}`);
 // }
+
+// let decisao = 1
+// let decisao = "1"
+
+// if(decisao == 1) {
+// }
+
+// if (decisao === 1) {
+//     console.log("voce abre a porta e encontra um grupo de zumbis famintos, game over");
+
+// } else if (decisao === 2) {
+//     console.log("voce pula a janela e cai em um arbusto macio. você sobreviveu por enquanto!");
+
+// } else {
+//     console.log("Escolha inválida! O pânico te paralisou e os zumbis te pegaram.");
+
+// }
+
+// Faça um script que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+
+//     salários até R$ 280,00 (incluindo) : aumento de 20%
+//     salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+//     salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+
+//     salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+//     o salário antes do reajuste;
+//     o percentual de aumento aplicado;
+//     o valor do aumento;
+//     o novo salário, após o aumento.
+
+let salario = 2000
+
+if (salario <= 280) {
+    console.log(`\n
+        salário antes do reajuste:${salario}\n
+        percentual de aumento: 20% \n
+        valor de aumento:${salario * 0.2}\n
+        novo salário:${salario * 1.2} `);
+
+
+
+} else if (salario > 280 && salario < 700) {
+    console.log(`\n
+        salário antes do reajuste:${salario}\n
+        percentual de aumento: 15% \n
+        valor de aumento:${salario * 0.15}\n
+        novo salário:${salario * 1.15} `);
+
+} else if (salario > 700 && salario < 1500) {
+    console.log(`\n
+        salário antes do reajuste:${salario}\n
+        percentual de aumento: 10% \n
+        valor de aumento:${salario * 0.10}\n
+        novo salário:${salario * 1.10} `);
+
+} else if (salario >= 1500) {
+    console.log(`\n
+        salário antes do reajuste:${salario}\n
+        percentual de aumento: 5% \n
+        valor de aumento:${salario * 0.05}\n
+        novo salário:${salario * 1.05} `);
+}
