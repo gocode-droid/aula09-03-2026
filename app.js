@@ -193,35 +193,136 @@
 //     o valor do aumento;
 //     o novo salário, após o aumento.
 
-let salario = 2000
+// let salario = 2000
 
-if (salario <= 280) {
-    console.log(`\n
-        salário antes do reajuste:${salario}\n
-        percentual de aumento: 20% \n
-        valor de aumento:${salario * 0.2}\n
-        novo salário:${salario * 1.2} `);
+// if (salario <= 280) {
+//     console.log(`\n
+//         salário antes do reajuste:${salario}\n
+//         percentual de aumento: 20% \n
+//         valor de aumento:${salario * 0.2}\n
+//         novo salário:${salario * 1.2} `);
 
 
 
-} else if (salario > 280 && salario < 700) {
-    console.log(`\n
-        salário antes do reajuste:${salario}\n
-        percentual de aumento: 15% \n
-        valor de aumento:${salario * 0.15}\n
-        novo salário:${salario * 1.15} `);
+// } else if (salario > 280 && salario < 700) {
+//     console.log(`\n
+//         salário antes do reajuste:${salario}\n
+//         percentual de aumento: 15% \n
+//         valor de aumento:${salario * 0.15}\n
+//         novo salário:${salario * 1.15} `);
 
-} else if (salario > 700 && salario < 1500) {
-    console.log(`\n
-        salário antes do reajuste:${salario}\n
-        percentual de aumento: 10% \n
-        valor de aumento:${salario * 0.10}\n
-        novo salário:${salario * 1.10} `);
+// } else if (salario > 700 && salario < 1500) {
+//     console.log(`\n
+//         salário antes do reajuste:${salario}\n
+//         percentual de aumento: 10% \n
+//         valor de aumento:${salario * 0.10}\n
+//         novo salário:${salario * 1.10} `);
 
-} else if (salario >= 1500) {
-    console.log(`\n
-        salário antes do reajuste:${salario}\n
-        percentual de aumento: 5% \n
-        valor de aumento:${salario * 0.05}\n
-        novo salário:${salario * 1.05} `);
+// } else if (salario >= 1500) {
+//     console.log(`\n
+//         salário antes do reajuste:${salario}\n
+//         percentual de aumento: 5% \n
+//         valor de aumento:${salario * 0.05}\n
+//         novo salário:${salario * 1.05} `);
+// }
+
+//  Nível Iniciante: Condições Simples
+// Foco em entender a sintaxe básica de if e else.
+
+// Par ou Ímpar: Crie um script que receba um número e verifique se ele é par ou ímpar.
+
+
+// Maioridade: Escreva um programa que verifique se uma pessoa já pode tirar a carteira de motorista (idade maior ou igual a 18).
+
+
+// Login Simples: Crie uma variável senha. Se a senha for igual a "1234", exiba "Acesso Permitido". Caso contrário, "Acesso Negado".
+
+
+//  Nível Intermediário: Operadores Lógicos e else if
+
+// Aqui você começará a combinar condições e lidar com mais de dois caminhos possíveis.
+
+// Aprovação Escolar: Receba três notas de um aluno. Calcule a média:
+
+// Se a média for 7 ou mais: "Aprovado".
+
+// Entre 5 e 6.9: "Recuperação".
+
+// Abaixo de 5: "Reprovado".
+
+
+// Cálculo de IMC: Com base no peso e altura, calcule o IMC e exiba a categoria (Baixo peso, Peso normal, Sobrepeso, etc.).
+
+// Maior de Três: Receba três números e determine qual deles é o maior.
+
+//  Nível Avançado: Lógica de Negócio e Validações
+
+
+// Desafios que exigem pensar em múltiplos cenários simultâneos.
+
+// Calculadora de Desconto: Crie um sistema para uma loja:
+
+// Compras acima de R$ 500,00: 15% de desconto.
+
+// Compras entre R$ 200,00 e R$ 500,00: 10% de desconto.
+
+// Abaixo de R$ 200,00: Sem desconto.
+
+// Desafio extra: Se o cliente for "VIP", adicione mais 5% de desconto fixo sobre o valor já com o primeiro desconto aplicado.
+
+
+// Crie um loop que conta de 1 a 10 e imprima cada número no console.
+// for (let index = 1; index <= 10; index ++) {
+//     console.log(`o index da rodada é=${index}`)
+// }
+
+// Contagem de Números Pares
+// for (let index = 2; index <= 20; index +=2) {
+//     console.log(`o index da rodada é=${index}`)
+// }
+
+// Utilize um loop para imprimir todos os números pares de 0 a 20 no console.
+// for (let index = 0; index <= 20; index +=2) {
+//     console.log(`o index da rodada é=${index}`)
+// }
+
+// Contagem de Números Ímpares
+
+// Utilize um loop para imprimir todos os números ímpares de 1 a 20 no console.
+// for (let index = 1; index <= 20; index +=2) {
+//     console.log(`o index da rodada é=${index}`)
+// }
+
+// Tabuada de um Número Específico
+// for (let index = 1; index <= 10; index++) {
+//     console.log(`7x${index+=0}=${index*7}`)
+// }
+
+// Crie um loop que imprime a tabuada do 5 (de 1 a 10) no console.
+// for (let index = 1; index <= 10; index++) {
+//     console.log(`5x${index+=0}=${index*5}`)
+// }
+
+// Soma de Números
+// Utilize um loop para somar todos os números de 1 a 100 e imprima o resultado no console.
+// let soma = 0
+// for (let index = 1; index <= 100; index++) {
+//     soma = soma + index
+// }
+// console.log(soma);
+
+// Média de Números
+// Crie um loop que calcula a média de todos os números de 1 a 50 e imprima o resultado no console.
+// let soma = 0
+// for (let index = 1; index <= 50; index++) {
+//     soma = soma + index
+// }
+// console.log(soma/50);
+
+// Fatorial de um Número
+// Utilize um loop para calcular o fatorial de um número especificado e imprima o resultado no console.
+let fatorial = 4
+for (let index = 4; index > 1; index--) {
+    soma = index*1
 }
+console.log(soma);
